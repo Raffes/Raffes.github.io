@@ -1,0 +1,75 @@
+#page-curriculum nav {
+    background: var(--color-sidebar-background);
+    font-size: 24px;
+}
+
+#page-curriculum nav a .name {
+    color: var(--color-title-in-primary);
+    cursor: default;
+}
+
+#page-curriculum nav a,  
+#page-curriculum nav a .lastName{
+    color: var(--color-primary);
+}
+
+#page-curriculum nav a:hover {
+    color: var(--color-secondary);
+}
+
+#page-curriculum nav a:focus {
+    color: var(--color-secondary);
+}
+
+#page-curriculum nav .navbar-toggler {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    border-color: var(--color-primary);
+}
+
+#page-curriculum nav .navbar-toggler .fa-hamburger {
+    color: #FF9315;
+}
+
+@media (min-width: 992px) {
+    #sideNav {
+        text-align: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        width: 17rem;
+        height: 100vh;
+    }
+
+    #sideNav .navbar-brand {
+        display: flex;
+        margin: auto auto 0;
+        padding: 0.5rem;
+      }
+
+    #sideNav span .img-profile {
+        max-width: 160px;
+        max-height: 10rem;
+        border: 8px solid var(--color-primary);
+        border-radius: 42%;
+    }
+
+    #sideNav .navbar-collapse {
+        display: flex;
+        align-items: flex-start;
+        flex-grow: 0;
+        width: 100%;
+        margin-bottom: auto;
+    }
+
+    #sideNav .navbar-collapse .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+      }
+}
